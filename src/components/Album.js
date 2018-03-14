@@ -89,6 +89,24 @@
      this.setState({ currentTime: newTime });
    }
 
+   handleVolumeChange(e) {
+   const newVolume = e.target.value;
+   this.audioElement.volume = newVolume;
+   this.setState({ volume: newVolume });
+ }
+
+   formatTime(duration){
+   var minutes = Math.floor(duration/60)
+   var seconds = (duration - (minutes * 60)).toFixed(0)
+   var formatSeconds = ("0" + seconds).slice(-2)
+   if(typeof duration === "number"){
+     return minutes + ":" + formatSeconds
+   }
+   else {
+     return "-:--"
+   }
+ }
+
 
    render() {
      return (
@@ -111,12 +129,13 @@
           {this.state.album.songs.map( (song, index) =>
              <tr className="song" key={index} onClick={() => this.handleSongClick(song)} >
              <td className="song-actions">
-                  <span className="ion-play"></span>
-                  <span className="ion-pause"></span>
+             <button>
+             <span className={this.state.currentSong == song && this.state.isPlaying? 'ion-pause' : 'ion-play'}></span>
+             </button>
               </td>
               <td className="song-number">{index+1 }</td>
               <td className="song-title">{song.title}</td>
-              <td className="song-duration">{song.duration}</td>
+              <td className="song-duration">{this.formatTime(song.duration)}</td>
             </tr>
           )}
           </tbody>
@@ -130,6 +149,9 @@
            handlePrevClick={() => this.handlePrevClick()}
            handleNextClick={() => this.handleNextClick()}
            handleTimeChange={(e) => this.handleTimeChange(e)}
+           formatTime={(duration) => this.formatTime(duration)}
+           handleVolumeChange={(e) => this.handleVolumeChange(e)}
+
          />
        </section>
      );
