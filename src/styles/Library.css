@@ -1,0 +1,53 @@
+
+.library {
+  background-color: #343a40;
+  padding-top: 10em;
+}
+
+img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#album-cover {
+  position: relative;
+  height: 600px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px black;
+  display: block;
+}
+
+.album-container {
+  height: 450px;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-top: 3em;
+
+
+}
+
+
+#album-info {
+  color: rgb(232, 44, 122);
+  font-family: Impact;
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+#title {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+#artist {
+  text-align: center;
+}
+
+#songs {
+  text-align: center;
+  margin-bottom: 4em;
+}

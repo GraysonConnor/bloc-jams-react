@@ -1,0 +1,52 @@
+html {
+  background-color: #343a40;
+}
+
+header {
+  background-color: #343a40;
+}
+
+.landing {
+  background-color: #343a40;
+}
+
+h1 {
+  background-color: #343a40;
+  padding-top: 0.25em;
+
+}
+
+.line {
+  padding-top: 10px;
+  border-bottom: 0.5px solid white;
+}
+
+.selling-points {
+  background-color: #343a40;
+  color: rgb(232, 44, 122);
+  text-align: center;
+  font-family: Impact;
+  font-weight: bold;
+  margin-top: 9em;
+
+}
+
+.point {
+  padding-bottom: 9em;
+}
+
+.point-title {
+  font-size: 2.5em;
+}
+
+.point-description {
+  border-bottom: 1px solid white;
+  width: 30%;
+  margin: auto;
+  font-size: 1.25em;
+}
+
+.hero-title {
+  font-size: 1.5em;
+  padding-top: 0.5em;
+}
