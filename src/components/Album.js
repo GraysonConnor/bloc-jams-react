@@ -1,7 +1,6 @@
  import React, { Component } from 'react';
  import albumData from './../data/album';
  import PlayerBar from './PlayerBar';
- import SongRow from './SongRow';
  import '.././styles/Album.css';
 
 
