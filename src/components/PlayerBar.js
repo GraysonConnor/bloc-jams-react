@@ -18,7 +18,7 @@ import '.././styles/PlayerBar.css';
         </button>
       </section>
       <section id="time-control">
-        {this.props.formatTime(this.props.currentTime)}
+        <div id="current-time">{this.props.formatTime(this.props.currentTime)}</div>
         <input
           type="range"
           className="seek-bar"

@@ -113,18 +113,17 @@
  }
 
 
-   formatTime(duration){
-   var minutes = Math.floor(duration/60)
-   var seconds = (duration - (minutes * 60)).toFixed(0)
-   var formatSeconds = ("0" + seconds).slice(-2)
-   if(typeof duration === "number"){
-     return minutes + ":" + formatSeconds
-   }
-   else {
-     return "-:--"
-   }
+ formatTime(duration){
+ var minutes = Math.floor(duration/60)
+ var seconds = (duration - (minutes * 60)).toFixed(0)
+ var formatSeconds = ("0" + seconds).slice(-2)
+ if(typeof duration === "number"){
+   return minutes + ":" + formatSeconds
  }
-
+ else {
+   return "-:--"
+ }
+}
 
 
 

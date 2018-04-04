@@ -51,22 +51,26 @@
   margin: 0.5rem auto;
   width: 50%;
   margin-bottom: 40px;
-  color: rgb(232, 44, 122);;
-}
+  color: rgb(232, 44, 122);
 
-#time-control div,
-#volume-control div {
-  font-size: 0.8rem;
-  color: hsla(0, 0%, 100%, 0.4);
+}
+#time-control div {
+  font-size: 0.98rem;
+  color: rgb(232, 44, 122);
   width: 35px;
   display: block;
   float: left;
   text-align: center;
+
 }
 
 #volume-control div {
   font-size: 0.9rem;
   width: 20px;
+  display: block;
+  color: rgb(232, 44, 122);
+  float: left;
+  text-align: center;
 }
 
 #volume-control {
